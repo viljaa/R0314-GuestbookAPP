@@ -19,5 +19,31 @@
             </ul>
         </div>
     </div>
-    <script src="client.js"></script>
+
+    <div class="pure-g">
+        <div class="pure-u-1-3"></div>
+        <div class="pure-u-1-3">
+            <div id="formcontainer">
+                <h1 class="subpage_h1">Add new message(AJAX)</h1>
+                <form class="pure-form">
+                    <fieldset class="pure-group">
+                        <input type="text" class="pure-input-1" placeholder="Name" id="a_name">
+                    </fieldset>
+                
+                    <fieldset class="pure-group">
+                        <input type="text" class="pure-input-1" placeholder="Country" id="a_country">
+                    </fieldset>
+
+                    <fieldset class="pure-group">
+                        <input type="text" class="pure-input-1" placeholder="Message" id="a_message">
+                    </fieldset>
+                
+                    <button class="pure-button pure-input-1-2 pure-button-primary" id="sendMSG_btn">Enter</button>
+                </form>
+                <div id="status"><!--AJAX response comes here--></div>
+            </div>
+        </div>
+        <div class="pure-u-1-3"></div>
+    </div>
+    <script src="./ajaxmsg.js"></script>
 </body>
