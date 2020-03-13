@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
 body{
     font-family: 'Sen', sans-serif;
+    background: rgb(53, 53, 53);
 }
 
 /*ELEMENTS*/
@@ -12,11 +13,15 @@ body{
 }
 
 .splash-container {
-    background: #ffffff;
+    background: rgb(53, 53, 53);
+    background-image: url('https://miro.medium.com/max/6000/0*yzDuQsL9aT6ZDA8j');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
     z-index: 1;
     overflow: hidden;
     width: 100%;
-    height: 88%;
+    height: 93%;
     top: auto;
     left: 0;
     position: fixed !important;
@@ -35,14 +40,14 @@ body{
 .splash-head {
     font-size: 55px;
     font-weight: bold;
-    color:rgb(65, 65, 65);
+    color:white;
     font-weight: 100;
     border-radius: 5px;
     line-height: 1em;
 }
 
 .splash-subhead {
-    color:rgb(65, 65, 65);
+    color:rgba(255, 255, 255, 0.76);
     font-size: 16px;
     letter-spacing: 0.05em;
     opacity: 0.8;
@@ -82,14 +87,22 @@ th{
     min-width: 200px;
 }
 
+td{
+    background-color: white !important;
+}
+
 /*New Message -elements*/
 #formcontainer{
     margin-top: 100px;
 }
 
 #sendMSG_btn{
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
+}
+/*Ajax-page*/
+#status{
+    margin-top: 55px;
 }
 
 /*TEXT*/
@@ -99,14 +112,14 @@ th{
 
 #guestbook_h1{
     font-size: 55px;
-    font-weight: 100;
-    color: rgb(65, 65, 65) !important;
+    font-weight: 80;
+    color: white!important;
 }
 
 .subpage_h1{
     font-size: 55px;
-    font-weight: 100;
-    color: rgb(65, 65, 65) !important;
+    font-weight: 80;
+    color: white!important;
 }
 
 /*ANIMATIONS*/
@@ -115,3 +128,42 @@ th{
 }
 
 /*MEDIA QUERIES*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: 35%!important;
+        width: 35%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        font-size: 40% !important;
+        width: 40%;
+    } 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        font-size: 60%!important;
+        width: 60%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        font-size: 80%!important;
+        width: 80%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        font-size: 100%!important;
+        width: 100%;
+    }
+}

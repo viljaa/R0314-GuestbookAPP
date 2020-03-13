@@ -61,7 +61,7 @@ app.post('/submitdata', (req, res)=>{
         'message': message,
         'date': date
     });
-    fs.writeFileSync('./data.json', JSON.stringify(data), (err)=>{
+    fs.writeFileSync('./data.json', JSON.stringify(data, null, 4), (err)=>{
         if (err) return console.error(err);
         console.log('Data saved');
     });
@@ -90,12 +90,12 @@ app.post('/ajaxsubmit', (req, res)=>{
         'message': message,
         'date': date
     });
-    fs.writeFileSync('./data.json', JSON.stringify(data), (err)=>{
+    fs.writeFileSync('./data.json', JSON.stringify(data,null,4), (err)=>{
         if (err) return console.error(err);
     });
     console.log('Data saved');
     
-    res.status(200).send(name + ' lisätty listaan onnistuneesti ID:llä ' + id_count);
+    res.send(JSON.stringify(data));
 
 });
 

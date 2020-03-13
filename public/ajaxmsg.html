@@ -25,7 +25,7 @@
         <div class="pure-u-1-3">
             <div id="formcontainer">
                 <h1 class="subpage_h1">Add new message(AJAX)</h1>
-                <form class="pure-form">
+                <form class="pure-form" onsubmit="return false;">
                     <fieldset class="pure-group">
                         <input type="text" class="pure-input-1" placeholder="Name" id="a_name">
                     </fieldset>
@@ -40,7 +40,11 @@
                 
                     <button class="pure-button pure-input-1-2 pure-button-primary" id="sendMSG_btn">Enter</button>
                 </form>
-                <div id="status"><!--AJAX response comes here--></div>
+                <div id="status">
+                    <table class="pure-table pure-table-bordered" id="ajax_table">
+                        <!--AJAX response comes here-->
+                    </table>
+                </div>
             </div>
         </div>
         <div class="pure-u-1-3"></div>
