@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT;  // Change port to 5000 or some other free port if running locally
 const bodyParser = require('body-parser');
 const fs = require('fs');
 

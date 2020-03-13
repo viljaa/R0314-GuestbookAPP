@@ -1,7 +1,7 @@
 window.onload = ()=>{
     let output = '';
 
-    $.getJSON('https://vj-guestbookapp.herokuapp.com/api/jsondata', (data)=>{
+    $.getJSON('https://vj-guestbookapp.herokuapp.com/api/jsondata', (data)=>{ // Change URL to http://localhost:5000/api/jsondata if running locally
     // Iterate through json data and format it
     for (var i in data){
         output += '<tr><td>' + data[i].id + '</td>'

@@ -6,6 +6,11 @@ window.onload = () =>{
         let country = document.getElementById("a_country").value;
         let message = document.getElementById("a_message").value;
 
+        // Check for empty fields
+        if (name == '' || country == '' || message == ''){
+            alert("Can't sumbit empty fields! Check all input fields!");
+        }
+        else{
         // Create AJAX-object
         let xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = ()=>{
@@ -48,5 +53,6 @@ window.onload = () =>{
             'Content-type', "application/x-www-form-urlencoded"
         );
         xmlhttp.send('name='+name+'&country='+country+'&message='+message);
+        }
     });
 };
